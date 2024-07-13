@@ -1,1 +1,2 @@
-10
+Minimum Value : -9
+Maximum Value : 12
