@@ -13,6 +13,31 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World.";
-    return 0;
+  int n;
+  cin >> n;
+
+  for (int i = 1; i <= n; i++)
+  {
+    for (int j = n - i; j > 0; j--)
+    {
+      cout << "    ";
+    }
+
+    for (int k = i; k < 2 * i; k++)
+    {
+      if (k < 10)
+        cout << "0";
+      cout << k << "  ";
+    }
+
+    for (int m = 2 * i - 2; m >= i; m--)
+    {
+      if (m <10) cout << "0";
+      cout << m << "  ";
+    }
+
+    cout << endl;
+  }
+
+  return 0;
 }

@@ -13,6 +13,23 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World.";
-    return 0;
+  int n, num;
+  cin >> n;
+
+  int min = INT_MAX, max = INT_MIN;
+  for (int i = 0; i < n; i++)
+  {
+    cin >> num;
+    if (num < min)
+    {
+      min = num;
+    }
+    if (num > max)
+    {
+      max = num;
+    }
+  }
+  cout << "Minimum Value : " << min << endl;
+  cout << "Maximum Value : " << max << endl;
+  return 0;
 }

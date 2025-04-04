@@ -13,6 +13,24 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World.";
-    return 0;
+  float n, p;
+  cin >> n >> p;
+
+  float root = 0;
+  float inc = 1.0;
+
+  for (int i = 0; i <= p; i++)
+  {
+
+    while (root * root <= n)
+    {
+      root += inc;
+    }
+    root -= inc;
+    inc /= 10;
+  }
+
+  cout << root;
+
+  return 0;
 }

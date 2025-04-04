@@ -13,6 +13,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World.";
-    return 0;
+  ld c, f;
+  cin >> f;
+  c = ((f - 32) * 5) / 9;
+  cout << f << "°F is " << c << "°C.";
+  return 0;
 }
